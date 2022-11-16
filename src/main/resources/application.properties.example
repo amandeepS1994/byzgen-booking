@@ -1,0 +1,22 @@
+## Application Configurations ##
+spring.application.name=byzgen
+server.servlet.context-path=/api
+server.port=${port}
+
+## JPA Configuration ##
+spring.jpa.database=h2
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.defer-datasource-initialization=true
+
+## datasource configuration ##
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.url=jdbc:h2:mem:byzgen_booking
+spring.datasource.name=bookingdb
+spring.datasource.embedded-database-connection=h2
+spring.datasource.username=${username}
+spring.datasource.password=${password}
+
+## H2 configuration ##
+spring.h2.console.enabled=true
+spring.h2.console.path=/database
